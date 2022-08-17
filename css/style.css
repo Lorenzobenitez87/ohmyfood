@@ -24,6 +24,10 @@ header {
     position: relative;
 }
 
+main section {
+    padding: 0 20px;
+}
+
 main div {
     display: flex;
     align-items: center;
@@ -40,11 +44,13 @@ main div .fa-solid {
 
 main section {
     text-align: center;
+    background-color: #f6f6f6;
 }
 
 main section h2 {
-    margin-top: 50px;
+    padding-top: 50px;
     font-size: 25px;
+    margin: 0;
 }
 
 main section p {
@@ -67,4 +73,48 @@ main section button {
 main section button:hover {
     transform: scale(1.02);
     opacity: 0.9;
+}
+
+ol li {
+    background-color: #f6f6f6;
+    font-weight: 500;
+    padding: 25px;
+    flex-grow: 1;
+    border-radius: 20px;
+    box-shadow: 2px 1px 8px -3px #000000 ;
+}
+
+ol li:hover {
+    transform: scale(1.02);
+}
+
+ol li i {
+    margin-right: 20px;
+}
+
+ol li::before {
+    content: counter(steps);
+    counter-increment: steps;
+    color: white;
+    background-color: #9356dc;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    right: 40px;
+    top: 10px;
+}
+ol { 
+    display: flex;
+    gap: 20px;
+    padding-inline-start: 20px;
+    list-style-type: none;
+}
+
+@media screen and  (max-width: 890px) {
+    ol {
+        flex-direction: column;
+}   
 }
