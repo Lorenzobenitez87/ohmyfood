@@ -16,7 +16,9 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-header {
+/*HEADER*/
+
+.container-logo {
     font-family: "shrikhand", cursive;
     text-align: center;
     box-shadow: 0px 5px 5px rgb(0 0 0 / 25%);
@@ -24,11 +26,7 @@ header {
     position: relative;
 }
 
-main section {
-    padding: 0 20px;
-}
-
-main div {
+.container-header-loc {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,28 +36,29 @@ main div {
     padding: 5px;  
 }
 
-main div .fa-solid {
+.container-header-loc .fa-solid {
     font-size: 20px;
 }
 
-main section {
+.container-section-button {
     text-align: center;
     background-color: #f6f6f6;
+    padding: 0px 20px 50px 20px;
 }
 
-main section h2 {
+.container-section-button h2 {
     padding-top: 50px;
     font-size: 25px;
     margin: 0;
 }
 
-main section p {
+.container-section-button p {
     font-size: 20px ;
 }
 
-main section button {
+.container-button-explorer {
     transition: all 200ms;
-    margin-top: 20px;
+    margin-top: 10px;
     color: white;
     font-weight: 400;
     font-size: 15px;
@@ -70,29 +69,48 @@ main section button {
     background-image: linear-gradient(to top,#9356dc, #ff79da) 
 }
 
-main section button:hover {
+.container-button-explorer:hover {
     transform: scale(1.02);
     opacity: 0.9;
 }
 
-ol li {
-    background-color: #f6f6f6;
-    font-weight: 500;
-    padding: 25px;
-    flex-grow: 1;
-    border-radius: 20px;
-    box-shadow: 2px 1px 8px -3px #000000 ;
+.container-section-fonctionnement {
+    padding: 30px 20px;
 }
 
-ol li:hover {
+.marge-h2-fonctionnement {
+    padding-bottom: 20px;
+}
+
+.container-ol-fonctionnement { 
+    display: flex;
+    gap: 20px;
+    padding-inline-start: 20px;
+    list-style-type: none;
+}
+
+.container-ol-fonctionnement li {
+    background-color: #f6f6f6;
+    font-weight: 500;
+    padding: 20px;
+    flex-grow: 1;
+    border-radius: 20px;
+    box-shadow: 2px 1px 8px -3px #000000;
+    display: flex;
+    align-items: center;
+}
+
+.container-ol-fonctionnement li:hover {
     transform: scale(1.02);
 }
 
-ol li i {
+.container-ol-fonctionnement li i {
     margin-right: 20px;
+    font-size: large;
+    color: grey;
 }
 
-ol li::before {
+.container-ol-fonctionnement li::before {
     content: counter(steps);
     counter-increment: steps;
     color: white;
@@ -104,17 +122,10 @@ ol li::before {
     height: 30px;
     position: relative;
     right: 40px;
-    top: 10px;
-}
-ol { 
-    display: flex;
-    gap: 20px;
-    padding-inline-start: 20px;
-    list-style-type: none;
 }
 
-@media screen and  (max-width: 890px) {
-    ol {
+@media screen and  (max-width: 1000px) {
+    .container-ol-fonctionnement {
         flex-direction: column;
 }   
 }
