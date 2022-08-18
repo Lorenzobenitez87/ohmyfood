@@ -212,8 +212,27 @@ a div i {
 .hearth-icon {
     font-size: 1.5rem;
     position: absolute;
-    right: 1rem;
-   
-    
+    right: 3rem;
 }
 
+.container-footer {
+    background-color: #353535; 
+    padding: 25px 25px;
+    color: white;
+}
+
+.logo-footer {
+    font-family: "shrikhand", cursive;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin: 0;
+    padding: 5px;
+}
+
+.font-color-contact {
+    color: inherit;
+    text-decoration: none;
+}
