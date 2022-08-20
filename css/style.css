@@ -302,21 +302,33 @@ footer p {
     border-radius: 30px 30px 0 0;
     margin-top: -2rem;
     padding: 10px 30px 0 0px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    
 }
 
 .container-menus-page i {
-    font-size: 1.5rem;
-    transition: all 200ms ease-in-out; 
+    font-size: 1.8rem;
+    position: absolute; 
+    top: 2rem;
+    right: 2rem;
 }
 
-.container-menus-page i:hover {
-    background-clip: text;
+.container-menus-page .fa-solid {
+    transition: all 200ms ease-in-out;
+    opacity: 0;
     -webkit-background-clip: text;
-    font-weight: 800;
-    color: linear-gradient(#9356dc, #ff79da);
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(#9356dc, #ff79da);
+}
+
+.container-menus-page .fa-solid:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.container-menus-page .fa-regular:hover {
+    opacity: 0;
+    border: transparent;
 }
 
 /*MENU*/
