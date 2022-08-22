@@ -281,7 +281,20 @@ footer p {
     text-decoration: none;
 }
 
-/*PAGES*/
+/*PAGES RESTAURANTS*/
+
+.arrow i{
+    font-style: normal;
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    color: #353535;
+}
+
+.arrow i:hover {
+    transform: scale(1.2);
+    opacity: 0.9;
+}
 
 .pages-image {
     display: block;
