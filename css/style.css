@@ -37,8 +37,8 @@ header h1 {
     gap: 20px;
     background-color: rgb(231, 227, 227);
     text-align: center;
-    padding: 5px;  
-    color:#353535;
+    padding: 5px;
+    color: #353535;
     height: 60px;
 }
 
@@ -59,7 +59,7 @@ header h1 {
 }
 
 .container-section-button p {
-    font-size: 20px ;
+    font-size: 20px;
 }
 
 .container-button-explorer {
@@ -73,7 +73,7 @@ header h1 {
     border: none;
     border-radius: 25px;
     box-shadow: 2px 1px 8px -3px #000000;
-    background-image: linear-gradient(to top,#9356dc, #ff79da);
+    background-image: linear-gradient(to top, #9356dc, #ff79da);
 }
 
 .container-button-explorer:hover {
@@ -89,7 +89,7 @@ header h1 {
     padding-bottom: 20px;
 }
 
-.container-ol-fonctionnement { 
+.container-ol-fonctionnement {
     display: flex;
     gap: 30px;
     padding-inline-start: 20px;
@@ -131,10 +131,10 @@ header h1 {
     right: 40px;
 }
 
-@media screen and  (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
     .container-ol-fonctionnement {
         flex-direction: column;
-}   
+    }
 }
 
 /*MAIN RESTAURANT*/
@@ -153,8 +153,8 @@ header h1 {
 
 @media screen and (max-width: 767px) {
     .container-menus-card {
-    grid-template-columns: repeat(1, 1fr);
-}
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .card {
@@ -202,7 +202,7 @@ header h1 {
 
 .new::before {
     content: "Nouveau";
-    color: darken(#99e2d0,50%);
+    color: darken(#99e2d0, 50%);
     display: grid;
     place-items: center;
     position: absolute;
@@ -211,7 +211,7 @@ header h1 {
     height: 2rem;
     width: 6rem;
     border-radius: 2px;
-    background-color: #99e2d0; 
+    background-color: #99e2d0;
 }
 
 .card-description {
@@ -232,7 +232,7 @@ section a div p {
 
 .hearth-icon {
     font-size: 1.8rem;
-    position: absolute; 
+    position: absolute;
     right: 2rem;
     top: 2rem;
 }
@@ -240,7 +240,7 @@ section a div p {
 .card-description .fa-solid {
     opacity: 0;
     color: transparent;
-    background-image: linear-gradient(#9356dc, #ff79da) ;
+    background-image: linear-gradient(#9356dc, #ff79da);
     background-clip: text;
     -webkit-background-clip: text;
     transition: all 200ms ease-in-out;
@@ -260,7 +260,7 @@ section a div p {
 /*FOOTER*/
 
 .container-footer {
-    background-color: #353535; 
+    background-color: #353535;
     padding: 25px 25px;
     color: white;
 }
@@ -283,12 +283,13 @@ footer p {
 
 /*PAGES RESTAURANTS*/
 
-.arrow i{
+.arrow i {
     font-style: normal;
     position: absolute;
     left: 1rem;
     top: 50%;
     color: #353535;
+    transition: 0.5s;
 }
 
 .arrow i:hover {
@@ -304,7 +305,7 @@ footer p {
 }
 
 .title {
-    font-family: "shrikhand", "cursive" ;
+    font-family: "shrikhand", "cursive";
     padding: 20px;
     margin: 0;
 }
@@ -315,12 +316,12 @@ footer p {
     border-radius: 30px 30px 0 0;
     margin-top: -2rem;
     padding: 10px 30px 0 0px;
-    
+
 }
 
 .container-menus-page i {
     font-size: 1.8rem;
-    position: absolute; 
+    position: absolute;
     top: 2rem;
     right: 2rem;
 }
@@ -349,7 +350,7 @@ footer p {
 .menus-grid {
     background-color: #f6f6f6;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     padding: 0 25px;
     gap: 1rem;
 }
@@ -414,7 +415,7 @@ footer p {
     margin-right: 0;
 }
 
-.menu-item:hover .menu-item-click i  {
+.menu-item:hover .menu-item-click i {
     transform: rotate(360deg);
 
 }
@@ -472,11 +473,10 @@ footer p {
     border: none;
     border-radius: 25px;
     box-shadow: 2px 1px 8px -3px #000000;
-    background-image: linear-gradient(to top,#9356dc, #ff79da);
+    background-image: linear-gradient(to top, #9356dc, #ff79da);
 }
 
 .container-button-commander button:hover {
     transform: scale(1.02);
     opacity: 0.9;
 }
-
