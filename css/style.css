@@ -2,6 +2,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 :root {counter-reset: steps;}
 *,
 ::before,
@@ -238,11 +248,11 @@ section a div p {
 }
 
 .card-description .fa-solid {
+    -webkit-background-clip: text;
+    background-clip: text;
     opacity: 0;
     color: transparent;
     background-image: linear-gradient(#9356dc, #ff79da);
-    background-clip: text;
-    -webkit-background-clip: text;
     transition: all 200ms ease-in-out;
 }
 
@@ -269,11 +279,17 @@ section a div p {
     font-family: "shrikhand", "cursive";
     font-weight: 400;
     margin-bottom: 15px;
+    margin-top: 0;
 }
 
 footer p {
     margin: 0;
     padding: 5px;
+}
+
+footer i {
+    width: 15px;
+    margin-right: 5px;
 }
 
 .color-contact {
@@ -389,15 +405,40 @@ footer p {
 
 .menu-item {
     overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    
     display: flex;
     justify-content: space-between;
     background-color: white;
     border-radius: 20px;
     box-shadow: 2px 1px 8px -3px #000000;
+    animation: appear 1s;
+    animation-fill-mode: both;
 }
 
+.animation-delay1 {
+    animation-delay: 100ms;
+}
+.animation-delay2 {
+    animation-delay: 200ms;
+}
+.animation-delay3 {
+    animation-delay: 300ms;
+}
+.animation-delay4 {
+    animation-delay: 400ms;
+}
+.animation-delay5 {
+    animation-delay: 500ms;
+}
+.animation-delay6 {
+    animation-delay: 600ms;
+}
+.animation-delay7 {
+    animation-delay: 700ms;
+}
+.animation-delay8 {
+    animation-delay: 800ms;
+}
 .menu-item h4 {
     overflow: hidden;
     margin: 0;
@@ -435,13 +476,12 @@ footer p {
 
 .menu-item-click {
     background-color: #99e2d0;
-    width: 5rem;
-    margin-right: -5rem;
+    width: 4rem;
+    margin-right: -4rem;
     border-radius: 0 20px 20px 0;
     transition: all 0.5s;
     display: grid;
     place-items: center;
-    flex-shrink: 0;
 }
 
 .menu-item-click .fa-circle-check {
@@ -452,9 +492,11 @@ footer p {
 
 .menu-item-description {
     overflow: hidden;
+    white-space: nowrap;
 }
 
 .position-click {
+    flex-shrink: 0;
     display: flex;
     overflow: hidden;
 }
@@ -462,9 +504,11 @@ footer p {
 /*BUTTON PAGE RESTAURANT*/
 
 .container-button-commander {
-    height: 15vh;
+    height: 20vh;
     display: grid;
     place-items: center;
+    background-color: #f6f6f6;
+    padding-bottom: 20px;
 }
 
 .container-button-commander button {
