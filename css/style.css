@@ -8,21 +8,26 @@
         opacity: 0;
         transform: translateY(50%);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
+
 @keyframes disappear {
     from {
         transform: scale(1);
     }
+
     to {
         transform: scale(0);
     }
 }
 
-:root {counter-reset: steps;}
+:root {
+    counter-reset: steps;
+}
 
 *,
 ::before,
@@ -144,12 +149,17 @@ header h1 {
 
 .container-ol-fonctionnement li:hover {
     transform: scale(1.02);
+    background-color: #f5ecff;
 }
 
 .container-ol-fonctionnement li i {
     margin-right: 20px;
     font-size: large;
     color: grey;
+}
+
+.container-ol-fonctionnement li:hover i {
+    color: #9356dc;
 }
 
 .container-ol-fonctionnement li::before {
@@ -203,7 +213,7 @@ header h1 {
     background-image: url("../css/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
     background-size: cover;
     background-position: right;
-    height: 14rem;
+    height: 13rem;
     border-radius: 20px 20px 0 0;
 }
 
@@ -211,7 +221,7 @@ header h1 {
     background-image: url("../css/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
     background-size: cover;
     background-position: right;
-    height: 14rem;
+    height: 13rem;
     border-radius: 20px 20px 0 0;
 }
 
@@ -219,7 +229,7 @@ header h1 {
     background-image: url("../css/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
     background-size: cover;
     background-position: right;
-    height: 14rem;
+    height: 13rem;
     border-radius: 20px 20px 0 0;
 }
 
@@ -227,7 +237,7 @@ header h1 {
     background-image: url("../css/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
     background-size: cover;
     background-position: right;
-    height: 14rem;
+    height: 13rem;
     border-radius: 20px 20px 0 0;
 }
 
@@ -238,6 +248,7 @@ header h1 {
 .new::before {
     content: "Nouveau";
     color: #357e6c;
+    font-weight: bold;
     display: grid;
     place-items: center;
     position: absolute;
@@ -247,6 +258,7 @@ header h1 {
     width: 6rem;
     border-radius: 2px;
     background-color: #99e2d0;
+    box-shadow: 2px 1px 8px -3px #000000;
 }
 
 .card-description {
@@ -442,27 +454,39 @@ footer i {
 .animation-delay1 {
     animation-delay: 100ms;
 }
+
 .animation-delay2 {
     animation-delay: 200ms;
 }
+
 .animation-delay3 {
     animation-delay: 300ms;
 }
+
 .animation-delay4 {
     animation-delay: 400ms;
 }
+
 .animation-delay5 {
     animation-delay: 500ms;
 }
+
 .animation-delay6 {
     animation-delay: 600ms;
 }
+
 .animation-delay7 {
     animation-delay: 700ms;
 }
+
 .animation-delay8 {
     animation-delay: 800ms;
 }
+
+.animation-delay9 {
+    animation-delay: 900ms;
+}
+
 .menu-item h4 {
     overflow: hidden;
     margin: 0;
@@ -555,4 +579,3 @@ footer i {
     transform: scale(1.02);
     opacity: 0.9;
 }
-
