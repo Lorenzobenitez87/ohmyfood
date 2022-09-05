@@ -211,43 +211,20 @@ header h1 {
     }
 }
 
+.container-menus-card a img {
+    background: gray;
+    object-fit: cover;
+    height: 13rem;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
 .card {
     text-decoration: none;
     color: inherit;
     border-radius: 20px;
     flex-grow: 1;
-}
-
-.card-image1 {
-    background-image: url("../images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-    background-size: cover;
-    background-position: right;
-    height: 13rem;
-    border-radius: 20px 20px 0 0;
-}
-
-.card-image2 {
-    background-image: url("../images/stil-u2Lp8tXIcjw-unsplash.jpg");
-    background-size: cover;
-    background-position: right;
-    height: 13rem;
-    border-radius: 20px 20px 0 0;
-}
-
-.card-image3 {
-    background-image: url("../images/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-    background-size: cover;
-    background-position: right;
-    height: 13rem;
-    border-radius: 20px 20px 0 0;
-}
-
-.card-image4 {
-    background-image: url("../images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
-    background-size: cover;
-    background-position: right;
-    height: 13rem;
-    border-radius: 20px 20px 0 0;
+    box-shadow: 0px 3px 14px -7px #000000;
 }
 
 .new {
@@ -272,7 +249,6 @@ header h1 {
 
 .card-description {
     position: relative;
-    box-shadow: 2px 1px 8px -3px #000000;
     border-radius: 0 0 20px 20px;
 }
 
