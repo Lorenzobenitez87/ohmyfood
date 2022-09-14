@@ -127,7 +127,6 @@ header h1 {
 
 .container-section-fonctionnement {
     padding: 30px 20px;
-    width: 5;
 }
 
 .marge-h2-fonctionnement {
@@ -151,7 +150,7 @@ header h1 {
     display: flex;
     align-items: center;
     transition: all 200ms;
-    width: 3;
+    cursor: pointer;
 }
 
 .container-ol-fonctionnement li:hover {
@@ -187,7 +186,6 @@ header h1 {
 @media screen and (max-width: 1000px) {
     .container-ol-fonctionnement {
         flex-direction: column;
-        width: 3;
     }
 }
 
@@ -214,7 +212,7 @@ header h1 {
 .container-menus-card a img {
     background: gray;
     object-fit: cover;
-    height: 13rem;
+    height: 12rem;
     width: 100%;
     border-radius: 20px 20px 0 0;
 }
@@ -254,7 +252,7 @@ header h1 {
 
 section a div h3 {
     margin: 0;
-    padding: 25px 15px 0 15px;
+    padding: 20px 15px 0 15px;
 }
 
 section a div p {
@@ -266,7 +264,7 @@ section a div p {
     font-size: 1.8rem;
     position: absolute;
     right: 2rem;
-    top: 2rem;
+    top: 1.5rem;
 }
 
 .card-description .fa-solid {
@@ -344,33 +342,43 @@ footer i {
 .pages-image {
     display: block;
     width: 100%;
+    max-height: 700px;
     object-fit: cover;
-    object-position: center bottom;
 }
 
-.title {
-    font-family: "shrikhand", "cursive";
-    padding: 20px;
-    margin: 0;
+@media screen and (max-width: 600px) {
+    .pages-image {
+        height: 300px;
+    }
 }
 
-.container-menus-page {
+.container-main {
     position: relative;
     background-color: #f6f6f6;
     border-radius: 30px 30px 0 0;
     margin-top: -2rem;
+    padding-bottom: 20px;
+}
+
+.title {
+    font-family: "shrikhand", "cursive";
+    padding: 20px 35px 20px 20px;
+    margin: 0;
+}
+
+.container-title-pages {
     padding: 10px 30px 0 0px;
 
 }
 
-.container-menus-page i {
+.container-title-pages i {
     font-size: 1.8rem;
     position: absolute;
     top: 2rem;
     right: 2rem;
 }
 
-.container-menus-page .fa-solid {
+.container-title-pages .fa-solid {
     transition: all 200ms ease-in-out;
     opacity: 0;
     -webkit-background-clip: text;
@@ -379,12 +387,12 @@ footer i {
     background-image: linear-gradient(#9356dc, #ff79da);
 }
 
-.container-menus-page .fa-solid:hover {
+.container-title-pages .fa-solid:hover {
     opacity: 1;
     transform: scale(1.2);
 }
 
-.container-menus-page .fa-regular:hover {
+.container-title-pages .fa-regular:hover {
     opacity: 0;
     border: transparent;
 }
@@ -392,7 +400,6 @@ footer i {
 /*MENU*/
 
 .menus-grid {
-    background-color: #f6f6f6;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 0 25px;
@@ -426,7 +433,6 @@ footer i {
 }
 
 .menu-item {
-    height: 1;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
@@ -541,8 +547,6 @@ footer i {
     height: 20vh;
     display: grid;
     place-items: center;
-    background-color: #f6f6f6;
-    padding-bottom: 20px;
 }
 
 .container-button-commander button {
